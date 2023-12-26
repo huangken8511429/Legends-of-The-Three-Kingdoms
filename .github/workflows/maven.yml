@@ -90,7 +90,7 @@ jobs:
       - name: Docker build & push
         run: |
           docker build \
-            --build-arg JAR_FILENAME=target/${{ env.JAR_FILENAME }}.jar \
+            --build-arg JAR_FILENAME=LegendsOfTheThreeKingdoms/target/${{ env.JAR_FILENAME }}.jar \
             -t ${{ vars.AWS_ECR_URI }}/${{ vars.AWS_ECR_REPOSITORY_NAME }}:latest \
             -t ${{ vars.AWS_ECR_URI }}/${{ vars.AWS_ECR_REPOSITORY_NAME }}:${{ github.sha }} \
             -f docker/Dockerfile \
