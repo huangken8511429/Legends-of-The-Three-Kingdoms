@@ -83,7 +83,7 @@ jobs:
           name: ${{ env.ARTIFACT_NAME }}
           path: .
       - name: Get File
-        run: ls target/
+        run:  ls LegendsOfTheThreeKingdoms/target/
       - name: Get Path
         run: pwd
       # Docker build & push to AWS ECR Public
