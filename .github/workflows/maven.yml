@@ -24,6 +24,13 @@ jobs:
           java-version: '17'
           distribution: 'corretto'
 
+      # Get file
+      - name: Get file
+        run: ls
+      # Get Path
+      - name: Get Path
+        run: pwd
+        
       # Maven Verify
       - name: Maven Verify
         run: mvn -B verify -DJAR_FILENAME=${{ env.JAR_FILENAME }}
