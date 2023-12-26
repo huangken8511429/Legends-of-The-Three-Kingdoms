@@ -25,7 +25,7 @@ jobs:
           distribution: 'corretto'
 
       # List Pom.xml
-      - name: ls Target
+      - name: List LegendsOfTheThreeKingdoms Files
         run: ls LegendsOfTheThreeKingdoms
       # Get Path
       - name: Get Path
@@ -82,8 +82,8 @@ jobs:
         with:
           name: ${{ env.ARTIFACT_NAME }}
           path: .
-      - name: Get File
-        run:  ls LegendsOfTheThreeKingdoms/target/
+      - name: List All Target File
+        run:  ls target/
       - name: Get Path
         run: pwd
       # Docker build & push to AWS ECR Public
