@@ -24,16 +24,16 @@ jobs:
           java-version: '17'
           distribution: 'corretto'
 
-      # CD
-      - name: cd Target
-        run: cd LegendsOfTheThreeKingdoms
+      # List Pom.xml
+      - name: ls Target
+        run: ls LegendsOfTheThreeKingdoms
       # Get Path
       - name: Get Path
         run: pwd
         
       # Maven Verify
       - name: Maven Verify
-        run: mvn -B verify -DJAR_FILENAME=${{ env.JAR_FILENAME }}
+        run: mvn -f LegendsOfTheThreeKingdoms/pom.xml -B verify -DJAR_FILENAME=${{ env.JAR_FILENAME }}
 
       # Dump GitHub Context
       - name: Dump GitHub Context
