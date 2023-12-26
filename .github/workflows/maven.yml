@@ -24,9 +24,9 @@ jobs:
           java-version: '17'
           distribution: 'corretto'
 
-      # Get file
-      - name: Get file
-        run: ls LegendsOfTheThreeKingdoms
+      # CD
+      - name: cd Target
+        run: cd LegendsOfTheThreeKingdoms
       # Get Path
       - name: Get Path
         run: pwd
