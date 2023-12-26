@@ -8,6 +8,6 @@ public class GreetController {
 
     @GetMapping("/greet")
     public String greet() {
-        return "Hello 三國殺 From EC2 CI/CD測試";
+        return "Hello 三國殺 From EC2 20231227";
     }
 }
