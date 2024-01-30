@@ -53,7 +53,7 @@ jobs:
         with:
           name: ${{ env.ARTIFACT_NAME }}
           path: |
-            LegendsOfTheThreeKingdoms/spring/target/LegendsOfTheThreeKingdoms-*.jar
+            LegendsOfTheThreeKingdoms/spring/target/spring-*.jar
             LegendsOfTheThreeKingdoms/docker/Dockerfile
   docker-push:
     name: Docker Push
