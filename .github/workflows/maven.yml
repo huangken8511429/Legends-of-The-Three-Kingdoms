@@ -83,7 +83,7 @@ jobs:
           name: ${{ env.ARTIFACT_NAME }}
           path: .
       - name: List All Target File
-        run:  ls target/
+        run:  ls 
       - name: Get Path
         run: pwd
       # Docker build & push to AWS ECR Public
